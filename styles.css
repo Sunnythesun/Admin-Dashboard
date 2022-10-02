@@ -1,0 +1,91 @@
+.container {
+    height: 100vh;
+    background-color: lightgrey;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas:
+        "sidebar header"
+        "sidebar mainArea";
+}
+
+.header {
+    background-color: lightsalmon;
+    grid-area: header;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 2fr;
+}
+
+.buttonContainer {
+    background-color: lightslategray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 40px;
+}
+
+.sidebar {
+    background-color: lightblue;
+    grid-area: sidebar;
+
+    display: grid;
+    grid-template-rows: 0.5fr 3fr 15fr;
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 200%;
+}
+
+li {
+    display: grid;
+    padding: 5px;
+}
+
+.mainArea {
+    background-color: green;
+    grid-area: mainArea;
+    display: grid;
+    margin-left: 30px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 0.5fr 2fr 2fr;
+    grid-template-areas:
+        "header header"
+        "projects announcements"
+        "projects trending";
+}
+
+.projects {
+    background-color: lightgreen;
+    grid-area: projects;
+
+    display: grid;
+    /* margin-left: 30px; */
+    margin-right: 30px;
+    margin-bottom: 30px;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card {
+    background: lightskyblue;
+}
+
+
+.announcements {
+    background-color: rgb(68, 173, 68);
+    grid-area: announcements;
+    display: grid;
+}
+
+.trending {
+    background-color: rgb(74, 139, 74);
+    grid-area: trending;
+    display: grid;
+    margin-bottom: 30px;
+    grid-template-rows: 1fr 4fr;
+}
