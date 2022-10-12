@@ -1,10 +1,10 @@
 .container {
-    font-family: 'Questrial', sans-serif;
+    /* font-family: 'Questrial', sans-serif; */
+    font-family: 'Roboto', sans-serif;
 
     height: 100vh;
-    background-color: lightgrey;
+    background-color: azure;
     box-sizing: border-box;
-
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
@@ -14,16 +14,14 @@
 }
 
 .header {
-    background-color: lightsalmon;
+    background: lightblue;
     grid-area: header;
-
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
 
 .searchBarBox {
-    background-color: lightgrey;
     display: grid;
     grid-template-columns: 0.5fr 10fr;
     justify-items: left;
@@ -42,12 +40,11 @@
     height: 30%;
     border-radius: 30px;
     border: none;
-    background-color: #f5f5f5;
+    background-color: azure;
     padding-left: 20px;
 }
 
 .profileBox {
-    background-color: lightpink;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
@@ -68,12 +65,9 @@
 }
 
 .greetingBox {
-    background-color: palevioletred;
     margin-left: 30px;
     display: grid;
     grid-template-columns: 1fr 9fr;
-    /* align-items: center;
-    justify-items: left; */
 }
 
 .greetingBoxLeft {
@@ -82,20 +76,12 @@
     justify-items: center;
 }
 
-.greetingBoxRight {
-    background-color: azure;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr; */
-}
-
 .name {
     font-weight: bold;
     font-size: large;
 }
 
 .buttonContainer {
-    background-color: lightslategray;
     display: grid;
     justify-items: center;
     align-items: center;
@@ -103,7 +89,7 @@
 }
 
 .button {
-    background-color: rgb(206, 231, 112);
+    background-color: white;
     width: 45%;
     height: 35px;
     border-radius: 25px;
@@ -111,7 +97,8 @@
 }
 
 .sidebar {
-    background-color: lightblue;
+    /* background-color: lightblue; */
+    background: lightskyblue;
     grid-area: sidebar;
     font-weight: bold;
 
@@ -121,7 +108,6 @@
 
 .heading {
     /* the "dashboard" title area */
-    background-color: aqua;
     display: grid;
     grid-template-columns: 1fr 3fr;
     padding-top: 10px;
@@ -130,21 +116,12 @@
 .sidebarHeading {
     font-weight: bold;
     font-size: 200%;
-    /* justify-items: left; */
     vertical-align: bottom;
 }
-
-/* .sidebarLinks {
-    justify-items: center;
-} */
 
 li {
     display: grid;
     padding: 5px;
-}
-
-.sidebarLinks .material-icons {
-    padding-left: 55px;
 }
 
 .sidebar .material-icons {
@@ -155,7 +132,6 @@ li {
 }
 
 .mainArea {
-    background-color: green;
     grid-area: mainArea;
     display: grid;
     margin-left: 30px;
@@ -168,9 +144,7 @@ li {
 }
 
 .projects {
-    background-color: lightgreen;
     grid-area: projects;
-
     display: grid;
     margin-right: 30px;
     margin-bottom: 30px;
@@ -179,14 +153,14 @@ li {
 }
 
 .card {
-    background: lightskyblue;
+    background: lightblue;
     border-left-style: solid;
-    border-left-color: red;
+    border-left-color: orange;
     border-width: 5px;
     border-radius: 20px;
 
     display: grid;
-    grid-template-rows: 0.5fr 2fr;
+    grid-template-rows: 0.2fr 4fr 0.2fr;
 }
 
 .card p {
@@ -201,28 +175,34 @@ li {
 
 
 .announcements {
-    background-color: rgb(68, 173, 68);
     grid-area: announcements;
     display: grid;
     margin-right: 30px;
 }
 
 .trending {
-    background-color: rgb(74, 139, 74);
     grid-area: trending;
     display: grid;
     margin-bottom: 30px;
     margin-right: 30px;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 0.5fr 4fr;
 }
 
 .announcements .card {
-    background-color: lightyellow;
-    /* display: grid; */
+    background: lightblue;
+    display: grid;
+    grid-template-rows: 1fr 0.1fr 1fr 0.1fr 1fr;
 }
 
-/* .divider {
-    height: 20px;
-    width: 80%;
-    border-top: 2px aqua;
-} */
+.trending .card {
+    background: lightblue;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.trendingBox {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    margin-left: 10px;
+}
