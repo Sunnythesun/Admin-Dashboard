@@ -17,12 +17,13 @@
 
         <div class="header">
             <div class="searchBarBox">
-                <button type="submit"><i class="material-icons" style="color: black;">search</i></button>
+                <button onclick="buttonFunction()" type="submit"><i class="material-icons"
+                        style="color: black;">search</i></button>
                 <input type="text" placeholder="Search...">
             </div>
 
             <div class="profileBox">
-                <i class="material-icons" style="color: white;">notifications</i>
+                <i onclick="buttonFunction()" class="material-icons" style="color: white;">notifications</i>
                 <img class="profilePicSmall" src="/profilePic.png" alt="profilePic">
                 <span class="name">Nynaeve Al'Meara</span>
             </div>
@@ -38,9 +39,9 @@
             </div>
 
             <div class="buttonContainer">
-                <button type="button" class="button">New</button>
-                <button type="button" class="button">Upload</button>
-                <button type="button" class="button">Share</button>
+                <button onclick="buttonFunction()" type="button" class="button">New</button>
+                <button onclick="buttonFunction()" type="button" class="button">Upload</button>
+                <button onclick="buttonFunction()" type="button" class="button">Share</button>
             </div>
         </div>
 
@@ -55,49 +56,51 @@
 
                 <div>
                     <i class="material-icons" style="color: white;">home</i>
-                    <span>Home</span>
+                    <!-- <span>Home</span> -->
+                    <a href=".">Home</a>
                 </div>
 
                 <div>
                     <i class="material-icons" style="color: white;">person</i>
-                    <span>Profile</span>
+                    <a href=".">Profile</a>
+
                 </div>
 
                 <div>
                     <i class="material-icons" style="color: white;">message</i>
-                    <span>Messages</span>
+                    <a href=".">Messages</a>
                 </div>
 
                 <div>
                     <i class="material-icons" style="color: white;">history</i>
-                    <span>History</span>
+                    <a href=".">History</a>
                 </div>
 
                 <div>
                     <i class="material-icons" style="color: white;">task</i>
-                    <span>Tasks</span>
+                    <a href=".">Tasks</a>
                 </div>
 
                 <div>
                     <i class="material-icons" style="color: white;">forum</i>
-                    <span>Communities</span>
+                    <a href=".">Communities</a>
                 </div>
 
                 <br>
 
                 <div>
                     <i class="material-icons" style="color: white;">settings</i>
-                    <span>Settings</span>
+                    <a href=".">Settings</a>
                 </div>
 
                 <div>
                     <i class="material-icons" style="color: white;">info</i>
-                    <span>Support</span>
+                    <a href=".">Support</a>
                 </div>
 
                 <div>
                     <i class="material-icons" style="color: white;">lock</i>
-                    <span>Privacy</span>
+                    <a href=".">Privacy</a>
                 </div>
 
             </div>
@@ -116,9 +119,9 @@
                         provident iste incidunt veniam quibusdam, voluptatibus totam eius fuga rerum minima. Minus,
                         quam?</p>
                     <div class="cardIcons">
-                        <i class="material-icons" style="color: white;">edit</i>
-                        <i class="material-icons" style="color: white;">bookmark</i>
-                        <i class="material-icons" style="color: white;">share</i>
+                        <i onclick="buttonFunction()" class="material-icons" style="color: white;">edit</i>
+                        <i onclick="buttonFunction()" class="material-icons" style="color: white;">bookmark</i>
+                        <i onclick="buttonFunction()" class="material-icons" style="color: white;">share</i>
                     </div>
                 </div>
                 <div class="card">
@@ -129,9 +132,11 @@
                         nemo.
                     </p>
                     <div class="cardIcons">
-                        <i class="material-icons" style="color: white;">edit</i>
-                        <i class="material-icons" style="color: white;">bookmark</i>
-                        <i class="material-icons" style="color: white;">share</i>
+                        <div class="cardIcons">
+                            <i onclick="buttonFunction()" class="material-icons" style="color: white;">edit</i>
+                            <i onclick="buttonFunction()" class="material-icons" style="color: white;">bookmark</i>
+                            <i onclick="buttonFunction()" class="material-icons" style="color: white;">share</i>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
@@ -139,9 +144,11 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, ratione vero. Dolore totam
                         nesciunt quibusdam perferendis voluptas consequuntur. Repellat, tenetur!</p>
                     <div class="cardIcons">
-                        <i class="material-icons" style="color: white;">edit</i>
-                        <i class="material-icons" style="color: white;">bookmark</i>
-                        <i class="material-icons" style="color: white;">share</i>
+                        <div class="cardIcons">
+                            <i onclick="buttonFunction()" class="material-icons" style="color: white;">edit</i>
+                            <i onclick="buttonFunction()" class="material-icons" style="color: white;">bookmark</i>
+                            <i onclick="buttonFunction()" class="material-icons" style="color: white;">share</i>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
@@ -152,9 +159,11 @@
                         qui adipisci, quod cum? Ex asperiores autem minus eos deserunt qui fuga perspiciatis delectus
                         pariatur.</p>
                     <div class="cardIcons">
-                        <i class="material-icons" style="color: white;">edit</i>
-                        <i class="material-icons" style="color: white;">bookmark</i>
-                        <i class="material-icons" style="color: white;">share</i>
+                        <div class="cardIcons">
+                            <i onclick="buttonFunction()" class="material-icons" style="color: white;">edit</i>
+                            <i onclick="buttonFunction()" class="material-icons" style="color: white;">bookmark</i>
+                            <i onclick="buttonFunction()" class="material-icons" style="color: white;">share</i>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
@@ -163,9 +172,11 @@
                         officiis, accusantium sint optio pariatur ipsum quod odit cupiditate, distinctio tenetur ex
                         mollitia aut non tempore sunt aspernatur.</p>
                     <div class="cardIcons">
-                        <i class="material-icons" style="color: white;">edit</i>
-                        <i class="material-icons" style="color: white;">bookmark</i>
-                        <i class="material-icons" style="color: white;">share</i>
+                        <div class="cardIcons">
+                            <i onclick="buttonFunction()" class="material-icons" style="color: white;">edit</i>
+                            <i onclick="buttonFunction()" class="material-icons" style="color: white;">bookmark</i>
+                            <i onclick="buttonFunction()" class="material-icons" style="color: white;">share</i>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
@@ -174,9 +185,11 @@
                         reprehenderit mollitia enim exercitationem. Provident, deserunt. Molestias, doloribus?
                         Necessitatibus, quo voluptates modi nesciunt veritatis aut quia?</p>
                     <div class="cardIcons">
-                        <i class="material-icons" style="color: white;">edit</i>
-                        <i class="material-icons" style="color: white;">bookmark</i>
-                        <i class="material-icons" style="color: white;">share</i>
+                        <div class="cardIcons">
+                            <i onclick="buttonFunction()" class="material-icons" style="color: white;">edit</i>
+                            <i onclick="buttonFunction()" class="material-icons" style="color: white;">bookmark</i>
+                            <i onclick="buttonFunction()" class="material-icons" style="color: white;">share</i>
+                        </div>
                     </div>
                 </div>
 
@@ -256,3 +269,12 @@
 </body>
 
 </html>
+
+
+
+
+<script>
+    function buttonFunction() {
+        location.reload();
+    }
+</script>

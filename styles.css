@@ -40,7 +40,7 @@
     height: 30%;
     border-radius: 30px;
     border: none;
-    background-color: azure;
+    background-color: white;
     padding-left: 20px;
 }
 
@@ -54,6 +54,10 @@
 
 .profileBox .material-icons {
     font-size: 36px;
+}
+
+.profileBox .material-icons:hover {
+    opacity: 0.8;
 }
 
 .profilePicSmall {
@@ -96,8 +100,11 @@
     border: none;
 }
 
+button:hover {
+    opacity: 0.8;
+}
+
 .sidebar {
-    /* background-color: lightblue; */
     background: lightskyblue;
     grid-area: sidebar;
     font-weight: bold;
@@ -129,6 +136,14 @@ li {
     padding-right: 10px;
     padding-left: 40px;
     padding-top: 15px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
 }
 
 .mainArea {
@@ -173,6 +188,9 @@ li {
     text-align: right;
 }
 
+.card .material-icons:hover {
+    opacity: 0.8;
+}
 
 .announcements {
     grid-area: announcements;
