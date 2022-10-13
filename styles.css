@@ -224,3 +224,9 @@ a:visited {
     align-items: center;
     margin-left: 10px;
 }
+
+hr {
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
